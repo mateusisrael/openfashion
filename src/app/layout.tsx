@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Tenor_Sans } from "next/font/google";
+import { Tenor_Sans } from "next/font/google";
 import "./globals.css";
 
 const tenorSans = Tenor_Sans({
