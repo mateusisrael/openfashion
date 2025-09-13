@@ -1,23 +1,101 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors */
+  --color-text-title: #000000; /* Title-Active */
+  --color-text-body: #333333; /* Body */
+  --color-text-label: #555555; /* Label */
+  --color-text-placeholder: #888888; /* Placeholder */
+
+  --color-surface-line: #e0cfba; /* Line */
+  --color-surface-input: #f9f9f9; /* Input Background */
+  --color-surface-background: #f8f0e7; /* Background */
+  --color-surface-offwhite: #fcfcfc; /* Off-white */
+
+  --color-primary: #000000;
+  --color-brand-primary: #000000;
+  --color-brand-secondary-light: #dd8560;
+
+  /* Font Sizes + Line Heights + Tracking */
+  --text-title: 1.125rem;
+  --leading-title: 40px;
+  --tracking-title: 4px;
+
+  --text-subtitle: 0.875rem;
+  --leading-subtitle: 20px;
+  --tracking-subtitle: 2px;
+
+  --text-price: 0.938rem;
+  --leading-price: 24px;
+  --tracking-price: 0;
+
+  --text-body-large: 1rem;
+  --leading-body-large: 24px;
+  --tracking-body-large: 0;
+
+  --text-body-medium: 0.875rem;
+  --leading-body-medium: 24px;
+  --tracking-body-medium: 0;
+
+  --text-body-small: 0.75rem;
+  --leading-body-small: 18px;
+  --tracking-body-small: 0;
+
+  /* 🔠 Text Transform */
+  --textcase-uppercase: uppercase;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-text-title: var(--color-text-title);
+  --color-text-body: var(--color-text-body);
+  --color-text-label: var(--color-text-label);
+  --color-text-placeholder: var(--color-text-placeholder);
+
+  --color-surface-line: var(--color-surface-line);
+  --color-surface-input: var(--color-surface-input);
+  --color-surface-background: var(--color-surface-background);
+  --color-surface-offwhite: var(--color-surface-offwhite);
+
+  --color-primary: var(--color-primary);
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-secondary-light: var(--color-brand-secondary-light);
+
+  /* Font Sizes */
+  --text-title: var(--text-title);
+  --leading-title: var(--leading-title);
+  --tracking-title: var(--tracking-title);
+
+  --text-subtitle: var(--text-subtitle);
+  --leading-subtitle: var(--leading-subtitle);
+  --tracking-subtitle: var(--tracking-subtitle);
+
+  --text-price: var(--text-price);
+  --leading-price: var(--leading-price);
+  --tracking-price: var(--tracking-price);
+
+  --text-body-large: var(--text-body-large);
+  --leading-body-large: var(--leading-body-large);
+  --tracking-body-large: var(--tracking-body-large);
+
+  --text-body-medium: var(--text-body-medium);
+  --leading-body-medium: var(--leading-body-medium);
+  --tracking-body-medium: var(--tracking-body-medium);
+
+  --text-body-small: var(--text-body-small);
+  --leading-body-small: var(--leading-body-small);
+  --tracking-body-small: var(--tracking-body-small);
+
+  /* Text Transform */
+  --textcase-uppercase: var(--textcase-uppercase);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #171717;
   }
-}
+} */
 
 body {
   background: var(--background);
