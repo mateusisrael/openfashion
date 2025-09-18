@@ -1,14 +1,19 @@
-import { Button } from "@/ui/components/Button";
-import Icon from "@/ui/components/icons";
-
-
+import { Button } from '@/ui/components/Button';
+import ProductCard from '@/ui/components/ProductCard';
+import luxurybaner from '../assets/products/fashion-portrait-young-elegant-woman.jpg';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-amber-50">
-      <Icon name="backward" className="w[18px] "/>
-      <p className="text-black">Luxury Fashion & accessorys</p>
-      <Button></Button>
+    <div className="bg-background h-screen items-center justify-items-center overflow-hidden pt-[60px] font-sans">
+      <div className="flex w-full items-center">
+        <div className="absolute pl-9">
+          <p>Luxury</p>
+          <p>Fashion</p>
+          <p>& Accessories</p>
+        </div>
+        <Image className="w-full" alt="luxury banner" src={luxurybaner} />
+      </div>
     </div>
   );
 }

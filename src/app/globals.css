@@ -9,9 +9,9 @@
 
   --color-surface-line: #e0cfba; /* Line */
   --color-surface-input: #f9f9f9; /* Input Background */
-  --color-surface-background: #f8f0e7; /* Background */
+  --color-surface-background: #fff; /* Background */
   --color-surface-offwhite: #fcfcfc; /* Off-white */
-
+  --color-banner: #e7eaef;
   --color-primary: #000000;
   --color-brand-primary: #000000;
   --color-brand-secondary-light: #dd8560;
@@ -60,6 +60,7 @@
   --color-primary: var(--color-primary);
   --color-brand-primary: var(--color-brand-primary);
   --color-brand-secondary-light: var(--color-brand-secondary-light);
+  --color-banner: var(--color-banner);
 
   /* Font Sizes */
   --text-title: var(--text-title);
